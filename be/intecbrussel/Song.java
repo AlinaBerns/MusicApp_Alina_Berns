@@ -2,17 +2,17 @@ package be.intecbrussel;
 
 public class Song {
 
-        private String name;
-        private String artist;
-        private String album;
-        private String duration;
+        private final String name;
+        private final String artist;
+        private final String album;
+        private final String duration;
 
-        public Song(String[] songInfo)
+        public Song(String[] songDetails)
         {
-            this.name = songInfo[0];
-            this.artist = songInfo[1];
-            this.album = songInfo[2];
-            this.duration = songInfo[3];
+            this.name = songDetails[0];
+            this.artist = songDetails[1];
+            this.album = songDetails[2];
+            this.duration = songDetails[3];
         }
         public String getTitle() {
             return name;
@@ -33,7 +33,7 @@ public class Song {
         @Override
         public String toString( )
         {
-            return name + " by " + artist + " from " + album + " (" + duration + ")" ;
+            return name + " BY " + artist + " FROM " + album + " [" + duration + "]" ;
 
         }
     }

@@ -4,7 +4,9 @@ import java.util.Random;
 
 import java.util.Random;
 
-public class PartyAlbum {private Song[] songs;
+public class PartyAlbum {
+
+    private Song[] songs;
     private int count;
 
     public PartyAlbum(Album album1, Album album2, Album album3, Album album4, Album myAlbum) {
